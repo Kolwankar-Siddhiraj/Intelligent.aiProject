@@ -1,0 +1,140 @@
+{% load static %}
+
+
+<!-- <html>
+<head>
+<style>
+  #container{
+    margin:0px auto;
+    width: 500px;
+    height: 375px;
+    border: 10px #333 solid;
+  }
+  #videoElement{
+    width: 500px;
+    height: 375px;
+    background-color: #666;
+
+  }
+</style>
+</head>
+
+<body bgcolor="skyblue">
+  <div id="container">  
+  <video autoplay="true" id="videoElement">
+
+  </video>
+  </div>
+  
+<script type="text/javascript">
+  var video=document.querySelector("#videoElement");
+  navigator.getUserMedia=navigator.getUserMedia||navigator.
+  webkitGetUsermedia||navigator.mozGetUserMedia||navigator.msGetUserMedia||navigator.oGetUserMedia;
+  if(navigator.getUserMedia){
+    navigator.getUserMedia({video:true},handleVideo,VideoError);
+ 
+  }
+  function handleVideo(stream)
+  {
+    video.src=window.URL.createObjectURL(stream);
+
+  } 
+  function videoError(e)
+  {
+
+  }
+</script>
+</body>
+</html> -->
+
+<!-- Second -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <video id="myVideo" width="500" height="500">
+  <source src="static/Sundar.mp4" type="video/mp4">  
+  </video>
+  <script>
+
+    var vid=document.getElementById("myVideo");
+    vid.play();
+  </script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0" />
+	<title>Web Cam</title>
+	<script>
+	document.addEventListener("DOMContentLoaded", () => {
+		var but = document.getElementById("but");
+		var video = document.getElementById("vid");
+		var mediaDevices = navigator.mediaDevices;
+		vid.muted = true;
+		but.addEventListener("click", () => {
+      var vid=document.getElementById("myVideo");
+      vid.play();  
+
+		// Accessing the user camera and video.
+		mediaDevices
+			.getUserMedia({
+			video: true,
+			audio: true,
+			})
+			.then((stream) => {
+
+			// Changing the source of video to current stream.
+			video.srcObject = stream;
+			video.addEventListener("loadedmetadata", () => {
+				video.play();
+			});
+			})
+			.catch(alert);
+		});
+	});
+	</script>
+</head>
+
+<style>
+	div {
+	width: 500px;
+	height: 400px;
+	border: 2px solid black;
+	position: relative;
+	}
+	video {
+	width: 500px;
+	height: 400px;
+
+	object-fit: cover;
+	}
+</style>
+
+<body>
+  <video id="myVideo" width="500" height="500">
+    <source style="margin-left: 70px; margin-bottom: 70px" id='Video1' src="{% static 'videos/Sundar.mp4' %}" type="video/mp4">  
+    
+  </video>
+    
+	
+	<div>
+		<video id="vid"></video>
+	</div>
+	<br />
+	<button id="but" autoplay>
+		Start Interview 
+	</button>
+	
+</body>
+</html>
