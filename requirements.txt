@@ -35,7 +35,6 @@ pyttsx3==2.90
 PyTweening==1.0.3
 pytz==2020.1
 pywhatkit==5.1
-pywin32
 PyYAML==3.13
 regex==2021.8.3
 requests==2.26.0
