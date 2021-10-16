@@ -28,7 +28,7 @@ class html_info:
     active_form_login = bool(True)
 
 
-class form_error_messages:
+class form_error_messages: 
     # Error messages for login
     invalid_login_username = bool(False)
     invalid_login_password = bool(False)
