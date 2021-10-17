@@ -2,7 +2,7 @@ from django.shortcuts import render
 import re
 
 from django.urls.conf import path
-#from django.http import HttpResponse
+#from django.http import HttpResponse 
 
 
  
