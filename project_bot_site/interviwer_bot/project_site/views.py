@@ -21,7 +21,6 @@ regex_pattern_to_check_password = r'[A-Za-z0-9@#$%^&+=]{8,}'
 
 
 
-
 # HTML tag check class
 class html_info:
     login_button_name = str("Login")
