@@ -4,8 +4,7 @@ import re
 from django.urls.conf import path
 #from django.http import HttpResponse 
 
- 
- 
+
  
  
  
