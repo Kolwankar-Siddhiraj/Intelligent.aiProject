@@ -1,7 +1,7 @@
 appdirs==1.4.4
 asgiref==3.2.7
 beautifulsoup4==4.9.3
-certifi==2021.5.30
+certifi==2022.12.7
 charset-normalizer==2.0.4
 ChatterBot==1.0.4
 chatterbot-corpus==1.2.0
